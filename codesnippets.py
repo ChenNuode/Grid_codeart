@@ -1,31 +1,13 @@
-
-from random import randint
-from PIL import Image
-import ast
-from math import ceil
-
-s = """
-
-a = 1
-b = 2
-print (a+b)
-
 """
+
+for i in range(0,11):
+	if i %2==0:
+		print('{} is even'.format(i))
+	else:
+		print('{} is gay'.format(i))
 
 listoftuples = []
 colors = {"def":(0,255,0),"iffor":(255,105,180), "print":(255, 255, 0),"variablename":(138,43,226), "int":(255,0,0),"string":(255,140,0), "exp":(0,0,255)}
-
-"""
-def selectcolor(mytype):
-	mytuple = ""
-	while not isinstance(ast.literal_eval(mytuple),tuple) or mytuple != "none":
-		mytuple = input("Insert tuple for RGB color to present " + str(mytype) + " ")
-	if mytuple != "none":
-		colors[mytype] = ast.literal_eval(mytuple)
-
-for item in colors:
-	selectcolor(item)
-"""
 def run(s):
 	#stmts = ast.parse(s).body
 	count = 0
@@ -155,4 +137,32 @@ for i in range(len(listoftuples)):
 	pixels[newnum,col] = listoftuples[i]
 
 im.show()
-im.save("mygen.png")
+            
+"""
+
+
+
+
+# step 2
+
+
+"""
+a = 1
+b = 2
+print (a+b)
+
+"""
+
+
+"""
+
+for i in range(100):
+	if i%2==0:
+		print(i,"is even")
+	else:
+		print(i,"is odd")
+
+"""
+
+
+
